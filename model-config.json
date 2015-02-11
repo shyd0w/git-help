@@ -1,0 +1,41 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "options": {
+      "realmRequired": true,
+      "realmDelimiter": ":"
+    }
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "OrgUser": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Org": {
+    "dataSource": "db",
+    "public": false
+  }
+}

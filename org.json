@@ -1,0 +1,21 @@
+{
+  "name": "Org",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "properties": {
+    "oname": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "OrganizationUser": {
+      "type": "hasMany",
+      "model": "OrgUser",
+      "foreignKey": "orgUserId"
+    }
+  },
+  "acls": [],
+  "methods": []
+}
